@@ -1,9 +1,9 @@
 # Images
-* `spring-6-gateway:0.0.1-SNAPSHOT`
+* `spring-gateway:0.0.1-SNAPSHOT`
 * `spring-6-auth-server:0.0.1-SNAPSHOT`
-* `spring-6-rest-mvc:0.0.1-SNAPSHOT`
-* `spring-6-reactive:0.0.1-SNAPSHOT`
-* `reactive-mongo:0.0.1-SNAPSHOT`
+* `spring-rest-mvc:0.0.1-SNAPSHOT`
+* `spring-r2dbc:0.0.1-SNAPSHOT`
+* `spring-reactive-mongo:0.0.1-SNAPSHOT`
 
 Display all K8s resources in the default namespace
 ```bash

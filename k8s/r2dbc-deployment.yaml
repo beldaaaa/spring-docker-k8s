@@ -3,23 +3,23 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: reactive
-  name: reactive
+    app: r2dbc
+  name: r2dbc
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: reactive
+      app: r2dbc
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: reactive
+        app: r2dbc
     spec:
       containers:
-      - image: spring-6-reactive:0.0.1-SNAPSHOT
-        name: spring-6-reactive
+      - image: spring-r2dbc:0.0.1-SNAPSHOT
+        name: spring-r2dbc
         resources: {}
         env:
           - name: SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUER_URI

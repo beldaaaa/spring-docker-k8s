@@ -18,7 +18,7 @@ spec:
         app: reactive-mongo
     spec:
       containers:
-      - image: reactive-mongo:0.0.1-SNAPSHOT
+      - image: spring-reactive-mongo:0.0.1-SNAPSHOT
         name: reactive-mongo
         resources: {}
         env:

@@ -18,8 +18,8 @@ spec:
         app: rest-mvc
     spec:
       containers:
-      - image: spring-6-rest-mvc:0.0.1-SNAPSHOT
-        name: spring-6-rest-mvc
+      - image: spring-rest-mvc:0.0.1-SNAPSHOT
+        name: spring-rest-mvc
         resources: {}
         env:
           - name: SPRING_PROFILES_ACTIVE

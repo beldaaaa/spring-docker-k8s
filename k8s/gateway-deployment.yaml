@@ -18,8 +18,8 @@ spec:
         app: gateway
     spec:
       containers:
-      - image: spring-6-gateway:0.0.1-SNAPSHOT
-        name: spring-6-gateway
+      - image: spring-gateway:0.0.1-SNAPSHOT
+        name: spring-gateway
         resources: {}
         env:
           - name: SPRING_PROFILES_ACTIVE
