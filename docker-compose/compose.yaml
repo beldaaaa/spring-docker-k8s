@@ -27,7 +27,7 @@ services:
       - 9000
   rest-mvc:
     container_name: rest-mvc
-    image: spring-6-rest-mvc:0.0.1-SNAPSHOT
+    image: spring-rest-mvc:0.0.1-SNAPSHOT
     platform: linux/amd64
     expose:
       - 8080
@@ -38,9 +38,9 @@ services:
       - SERVER_PORT=8080
     depends_on:
       - mysql
-  reactive:
+  r2dbc:
     container_name: reactive
-    image: spring-6-reactive:0.0.1-SNAPSHOT
+    image: spring-r2dbc:0.0.1-SNAPSHOT
     platform: linux/amd64
     expose:
      - 8080
@@ -48,7 +48,7 @@ services:
       - SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUER_URI=http://auth-server:9000
   reactive-mongo:
     container_name: reactive-mongo
-    image: reactive-mongo:0.0.1-SNAPSHOT
+    image: spring-reactive-mongo:0.0.1-SNAPSHOT
     platform: linux/amd64
     expose:
       - 8080
@@ -60,7 +60,7 @@ services:
       - mongo
   gateway:
     container_name: gateway
-    image: spring-6-gateway:0.0.1-SNAPSHOT
+    image: spring-gateway:0.0.1-SNAPSHOT
     platform: linux/amd64
     expose:
       - 8080
@@ -72,7 +72,7 @@ services:
     depends_on:
       - auth-server
       - rest-mvc
-      - reactive
+      - r2dbc
       - reactive-mongo      
 
 
